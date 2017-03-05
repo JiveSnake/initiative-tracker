@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Initiative Tracker</title>
+                <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<form>
+                    <h1>Initiative Tracker</h1>
+                    <b>Name:</b> <input id="character_name" type="text">
+                    <b>Init:</b> <input id="character_init" type="number">
+			<input type="button" value="Add" onClick="addCharacterAndDisplay()">
+			<br>
+                        <div id="added_character"><br></div>
+			<br>
+                        <div id="round_num"><b>Round 1</b></div>
+                        <br>
+			<div id="init_content"></div>
+                        
+                        <br>
+                        <input type="button" value="Next Turn" onClick="nextTurn()">
+                        <input type="button" value="Reset" onClick="reSet()">
+                        <br>
+                        <div id="condition_field"></div>
+		</form>
+		<script src="init_tracker.js"></script>
+	</body>
+</html>
